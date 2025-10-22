@@ -1,0 +1,38 @@
+<h1>Switch Directive</h1>
+
+<!-- <div [ngSwitch]="color">
+<h1 *ngSwitchCase="'red'" style="background-color: red;">Red</h1>
+<h1 *ngSwitchCase="'aqua'"  style="background-color: aqua;">Aqua</h1>
+<h1 *ngSwitchCase="'antiquewhite'"  style="background-color: antiquewhite;">Antiquewhite</h1>
+<h1 *ngSwitchCase="'blue'"  style="background-color: blue;">Blue</h1>
+<h1 *ngSwitchCase="'b'"  style="background-color: blueviolet;">Blueviolet</h1>
+</div> -->
+
+<button (click)="changeColor('red')">Red</button>
+<button (click)="changeColor('aqua')">Aqua</button>
+<button (click)="changeColor('antiquewhite')">Antiquewhite</button>
+<button (click)="changeColor('blue')">Blue</button>
+<button (click)="changeColor('blueviolet')">Blueviolet</button>
+
+
+
+@switch (color) {
+  @case ('red') {
+    <h1 style="background-color: red;">Red</h1>
+  }
+  @case ('aqua') {
+    <h1 style="background-color: aqua;">Aqua</h1>
+  }
+  @case ('antiquewhite') {
+    <h1 style="background-color: antiquewhite;">Antiquewhite</h1>
+  }
+  @case ('blue') {
+    <h1 style="background-color: blue;">Blue</h1>
+  }
+  @case ('blueviolet') {
+    <h1 style="background-color: blueviolet;">Blueviolet</h1>
+  }
+  @default {
+    <h1 style="background-color: gray;">Unknown Color</h1>
+  }
+}
