@@ -1,0 +1,8 @@
+<h1>Two Way Binding</h1>
+<!-- <inpt [(ngModel)]="data" type="text" placeholder="Enter name"/>
+<h1>{{data}}</h1> -->
+<!-- <p>You entered: {{data}}</p> -->  first way using ngModel
+
+<hr>
+<input type="text" (input)="changeName($event)" placeholder="Enter name"/>
+<h1>{{data}}</h1>  <!-- second way using event binding and property binding  -->

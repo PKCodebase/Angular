@@ -1,0 +1,25 @@
+<h1>If Else | Control statement</h1>
+<button (click)="hide()">Hide div</button>
+<button (click)="show()">Show div</button>
+<button (click)="toggle()"> toggle </button>
+@if(display){
+<div style="width: 200px; height: 200px; background-color: antiquewhite;"></div>
+}
+
+
+<hr>
+<!-- <button (click)="toggleTwo()">Toggle Button</button> -->
+  <div style="background-color: burlywood; width: 200px; height: 200px;">
+ <button (click)="toggleTwo()">{{toggleDiv?'show burlywood div ':'show red div'}}</button>
+
+
+@if (toggleDiv) {
+  <div style="background-color: burlywood; width: 200px; height: 200px;">
+    Div is ON
+  </div>
+}
+@else {
+  <div style="background-color: red; width: 200px; height: 200px;">
+    Div is OFF
+  </div>
+}

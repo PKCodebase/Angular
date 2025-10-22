@@ -1,0 +1,31 @@
+<h1>Event in Angular</h1>
+<button (click)="handleEvent()">Click</button>
+
+<button (click)="addValue(10,20)">Add</button>
+<button class="btn" name="login-btn" (click)="handleEvents($event)">Events</button>
+
+<button (click)="findFact(6)">Factorial</button>
+
+
+<br>
+<br>
+<div (mouseenter)="handleEvents($event)" style="background-color: green; width: 100px; height:100px;">
+
+</div>
+<br>
+<br>
+
+<div (mouseleave)="handleEvents($event)" style="background-color: blue; width: 100px; height:100px;"></div>
+
+<br>
+<br>
+
+<!-- <input type="text" placeholder="name"
+(input)="handleInput($event)"/> -->
+
+<br>
+<br>
+<input type="text" placeholder="fname"
+(focus)="handleInput($event)"/>
+
+

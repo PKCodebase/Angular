@@ -1,0 +1,30 @@
+<h1>Signals</h1>
+
+<h1>{{x}}</h1>
+
+<!-- <h1>{{count}}</h1> -->
+
+<h1>{{count()}}</h1>
+
+
+<hr>
+<h2>{{x}}</h2>
+
+<!-- <button (click)="count.set(1000)">Increse Signal</button>
+
+<button (click)="x=200">Increase Property</button> -->
+
+
+<!-- <button (click)="updateValue()">updated value</button> -->
+
+
+<hr>
+<!-- <button (click)="updateValue('dec')">Decrement</button> -->
+ <!-- another way to call function with argument  -->
+ <button (click)="count.set(count()-1)">Decrement</button>
+<h1>{{count}}</h1>
+
+
+<!-- <button (click)="updateValue('inc')">Increment</button> -->
+<!-- another way to call function with argument -->
+<button (click)="count.set(count()+1)">Increment</button>

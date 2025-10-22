@@ -1,0 +1,29 @@
+<h1>Contextual Variable</h1>
+
+@for(user of users;track user; let i=$index;let f = $first;let l = $last){
+  
+  <!-- <h4>{{$last}}</h4>  $last is a contextual variable,it will give true if the current iteration is last
+  <h4>{{$first}}</h4> $first is a contextual variable,it will give true if the current iteration is first -->
+  @if(f || l){
+    <h3 style="background-color: aquamarine;">this is our {{i+1}} name is {{user}}</h3>
+  }@else {
+    <h3 style="background-color: rgb(240, 255, 127);">this is our {{i+1}} name is {{user}}</h3>
+  }
+  <!-- <h1>this is our {{i+1}} name is {{user}}</h1> $index is a contextual variable,it will give the index of the current iteration -->
+
+  @if($odd){
+    <h1 style="background-color: greenyellow;">{{i}}{{users}}</h1>
+    <h1>{{$count}}</h1>
+  }@else {
+    <h1 style="background-color: blanchedalmond;">{{i}}{{users}}</h1>
+  }
+  
+
+}
+<!-- 
+@for(statement){
+
+}
+@empty {
+  "No records available"
+} -->
